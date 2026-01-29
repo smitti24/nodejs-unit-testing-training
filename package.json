@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-unit-testing-training",
+  "version": "1.0.0",
+  "description": "Unit Testing Training Course - Vitest + GraphQL + PostgreSQL",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
