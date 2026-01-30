@@ -43,7 +43,8 @@
 
 ### Common Mistakes Made
 - Initially added duplicate test (divide by zero) - learned to avoid redundancy
-- *(Track recurring issues to address proactively)*
+- Tests in wrong describe block - needs to organize tests by function
+- Test data not matching test description (e.g., testing wrong condition)
 
 ---
 
@@ -83,7 +84,11 @@
 - ⚠️ Had duplicate test initially - removed after feedback
 
 ### Exercise 2.1 (user.test.ts)
-- *(Awaiting submission)*
+- ✅ Correct use of `toBe()`, `toStrictEqual()`, `.not.toBe()`
+- ✅ Good structure with separate `describe` blocks per function
+- ⚠️ Initially put hasRole tests in wrong describe block - fixed after feedback
+- ⚠️ Initially tested empty string instead of missing role - fixed after feedback
+- ⚠️ Initially used same invalid email for two different test cases - fixed after feedback
 
 ---
 
@@ -120,13 +125,7 @@
 
 **Module:** 1 - Foundations
 **Lesson:** 1.2 - Matchers & Assertions
-**Status:** Exercise 2.1 assigned, awaiting student submission
-
-### Exercise 2.1 Requirements:
-Student needs to create `src/__tests__/user.test.ts` with tests for:
-1. `isValidEmail(email)` - 3+ tests (valid, no @, no .)
-2. `addRole(user, role)` - 2+ tests (adds role, doesn't mutate original)
-3. `hasRole(user, role)` - 2+ tests (returns true/false appropriately)
+**Status:** ✅ Exercise 2.1 complete - ready for NEXT
 
 ---
 
@@ -165,7 +164,8 @@ nodejs-unit-testing-training/
 │   ├── user.ts              ← Lesson 1.2 demo code
 │   ├── __tests__/
 │   │   ├── math.test.ts     ← Lesson 1.1 exercises (complete)
-│   │   └── matchers-demo.test.ts  ← Lesson 1.2 reference
+│   │   ├── matchers-demo.test.ts  ← Lesson 1.2 reference
+│   │   └── user.test.ts     ← Lesson 1.2 exercises (complete)
 │   ├── exercises/           ← Empty, for future exercises
 │   └── solutions/           ← Empty, for solutions
 ```
@@ -208,4 +208,4 @@ npm run test:coverage  # With coverage report
 
 ---
 
-*Last updated: Lesson 1.2 in progress - Exercise 2.1 assigned*
+*Last updated: Lesson 1.2 Exercise 2.1 complete - ready for Lesson 1.3*
