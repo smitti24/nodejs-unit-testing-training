@@ -128,7 +128,7 @@
 | 1.1 | What is Unit Testing? | ✅ Complete |
 | 1.2 | Matchers & Assertions | ✅ Complete |
 | 1.3 | Setup & Teardown | ✅ Complete |
-| 1.4 | Test Organization | 🟡 In Progress |
+| 1.4 | Test Organization | ✅ Complete |
 
 ---
 
@@ -194,7 +194,8 @@ nodejs-unit-testing-training/
 │   │   ├── matchers-demo.test.ts  ← Lesson 1.2 reference
 │   │   ├── setup-demo.test.ts     ← Lesson 1.3 reference
 │   │   ├── organization-demo.test.ts ← Lesson 1.4 reference
-│   │   └── user.test.ts     ← Exercises (complete, refactored with beforeEach)
+│   │   ├── user.test.ts     ← Exercises 1.2/1.3 (complete)
+│   │   └── user-extended.test.ts ← Exercise 1.4 (complete)
 │   ├── exercises/           ← Empty, for future exercises
 │   └── solutions/           ← Empty, for solutions
 ```
@@ -237,4 +238,4 @@ npm run test:coverage  # With coverage report
 
 ---
 
-*Last updated: Lesson 1.4 in progress - Test Organization*
+*Last updated: Exercise 1.4 complete - Module 1 finished, ready for Module 2*
