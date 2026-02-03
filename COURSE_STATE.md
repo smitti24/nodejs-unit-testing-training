@@ -95,6 +95,12 @@
 - ✅ Different user setups per describe block (empty roles vs existing roles)
 - ✅ Clean refactoring - no duplicate user objects
 
+### Exercise 1.4 (user-extended.test.ts)
+- ✅ Good nested describe structure for getActiveUsers scenarios
+- ✅ Correct use of beforeAll for read-only tests
+- ✅ Tests both "with active users" and "with no active users" cases
+- ⚠️ Imported beforeEach from node:test initially - fixed after feedback
+
 ---
 
 ## Course Structure
@@ -129,8 +135,8 @@
 ## Current Position
 
 **Module:** 1 - Foundations
-**Lesson:** 1.3 - Setup & Teardown
-**Status:** ✅ Exercise 1.3 complete - ready for NEXT (Lesson 1.4)
+**Lesson:** 1.4 - Test Organization
+**Status:** ✅ Exercise 1.4 complete - ready for NEXT (Module 2)
 
 ---
 
@@ -162,6 +168,14 @@
 - DRY principle - avoid repeating test setup
 - Test isolation - fresh data for each test
 
+### Lesson 1.4
+- File organization: one test file per source file
+- Nested `describe` blocks for logical grouping
+- `it.only()` / `describe.only()` - focus on specific tests
+- `it.skip()` / `describe.skip()` - skip tests temporarily
+- Test naming pattern: [unit] [condition] [expected result]
+- Group by behavior: "when X, it does Y"
+
 ---
 
 ## Project Files
@@ -179,6 +193,7 @@ nodejs-unit-testing-training/
 │   │   ├── math.test.ts     ← Lesson 1.1 exercises (complete)
 │   │   ├── matchers-demo.test.ts  ← Lesson 1.2 reference
 │   │   ├── setup-demo.test.ts     ← Lesson 1.3 reference
+│   │   ├── organization-demo.test.ts ← Lesson 1.4 reference
 │   │   └── user.test.ts     ← Exercises (complete, refactored with beforeEach)
 │   ├── exercises/           ← Empty, for future exercises
 │   └── solutions/           ← Empty, for solutions
@@ -222,4 +237,4 @@ npm run test:coverage  # With coverage report
 
 ---
 
-*Last updated: Lesson 1.3 complete - ready for Lesson 1.4 (Test Organization)*
+*Last updated: Lesson 1.4 in progress - Test Organization*
